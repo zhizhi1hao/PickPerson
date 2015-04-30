@@ -13,6 +13,8 @@ import android.widget.RadioGroup;
 
 import day10.qianfeng.com.pickperson.activity.LaunchPickActivity;
 import day10.qianfeng.com.pickperson.customview.TopBarView;
+import utils.BitmapHelper;
+import utils.DbHelper;
 
 
 public class MainActivity extends Activity {
@@ -28,6 +30,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
+        //初始化
+        BitmapHelper.init(this);
+        DbHelper.init(this);
     }
 
     public void init(){
@@ -52,7 +57,7 @@ public class MainActivity extends Activity {
 
                             @Override
                             public void rightButtonCallBack(View view) {
-                                Intent intent=new Intent(MainActivity.this, LaunchPickActivity.class);
+                                Intent intent = new Intent(MainActivity.this, LaunchPickActivity.class);
                                 startActivity(intent);
                             }
                         });
