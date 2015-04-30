@@ -28,13 +28,16 @@
     </LinearLayout>
 
     <!--附近的人-->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="#aaaaaa"
+        ></View>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginBottom="12dp"
+        android:layout_height="60dp"
         android:background="#ffffff"
         android:gravity="center">
-
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -47,16 +50,31 @@
             android:layout_height="wrap_content"
             android:layout_weight="7"
             android:text="附近的人"
-            android:textSize="20sp" />
+            android:textSize="16sp"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/arrow_right" />
     </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="#aaaaaa"
+        android:layout_marginBottom="12dp"
+        ></View>
     <!--精选目的地-->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="#aaaaaa"
+        ></View>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginBottom="12dp"
+        android:layout_height="60dp"
         android:background="#ffffff"
         android:gravity="center">
-
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -68,13 +86,29 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="7"
-            android:text="附近的人"
-            android:textSize="20sp" />
+            android:text="精选目的地"
+            android:textSize="16sp" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/arrow_right" />
     </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="#aaaaaa"
+        android:layout_marginBottom="12dp"
+        ></View>
     <!--扫一扫-->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="#aaaaaa"
+        ></View>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:background="#ffffff">
         <ImageView
             android:layout_width="0dp"
@@ -95,7 +129,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="扫一扫"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -104,8 +138,21 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="扫二维码发现更多"
-                android:textSize="14sp" />
+                android:textSize="10sp" />
+
         </LinearLayout>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/arrow_right"
+            android:layout_gravity="center"/>
 
     </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="#aaaaaa"
+        android:layout_marginBottom="12dp"
+        ></View>
 </LinearLayout>
