@@ -17,6 +17,8 @@
         custom:leftImage="@drawable/back_html"
         custom:rightImage="@drawable/send_post"
         custom:topbar_title="发捡人"
+        custom:titleTextColor="#555555"
+        custom:titleTextSiza="10sp"
 
         />
     <View

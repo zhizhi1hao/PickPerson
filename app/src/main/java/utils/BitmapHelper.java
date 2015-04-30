@@ -10,7 +10,7 @@ import com.lidroid.xutils.BitmapUtils;
  */
 public class BitmapHelper {
    private static BitmapUtils utils;
-    private  static void init(Context context){
+    public   static void init(Context context){
         utils=new BitmapUtils(context, Environment.getExternalStorageDirectory()
                 .getAbsolutePath()+"/pickperson",1/8.0f,1024*1024*10);
         utils.clearCache();

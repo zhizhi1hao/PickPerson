@@ -12,6 +12,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import day10.qianfeng.com.pickperson.activity.LaunchPickActivity;
+import day10.qianfeng.com.pickperson.activity.SearchActivity;
 import day10.qianfeng.com.pickperson.customview.TopBarView;
 import utils.BitmapHelper;
 import utils.DbHelper;
@@ -52,7 +53,8 @@ public class MainActivity extends Activity {
                         topBarView.setOnTobCilck(new TopBarView.TopbarCallBack() {
                             @Override
                             public void leftButtonCallBack(View view) {
-
+                                Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+                                startActivity(intent);
                             }
 
                             @Override
