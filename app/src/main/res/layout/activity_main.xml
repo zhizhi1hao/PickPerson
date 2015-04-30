@@ -23,10 +23,10 @@
         custom:topbar_title="捡人"
 -->
     <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:layout_below="@id/topbar"
-        android:background="#999999" />
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:layout_below="@id/topbar"
+    android:background="#999999" />
 
 
     <View

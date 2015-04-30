@@ -1,14 +1,17 @@
 package day10.qianfeng.com.pickperson;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import day10.qianfeng.com.pickperson.activity.LaunchPickActivity;
 import day10.qianfeng.com.pickperson.customview.TopBarView;
 
 
@@ -41,6 +44,18 @@ public class MainActivity extends Activity {
                         topBarView.setLeftImageViewIcon(getResources().getDrawable(R.drawable.search_icon));
                         topBarView.setRigImageView(getResources().getDrawable(R.drawable.edit_icon));
                         topBarView.setTittleText("捡人");
+                        topBarView.setOnTobCilck(new TopBarView.TopbarCallBack() {
+                            @Override
+                            public void leftButtonCallBack(View view) {
+
+                            }
+
+                            @Override
+                            public void rightButtonCallBack(View view) {
+                                Intent intent=new Intent(MainActivity.this, LaunchPickActivity.class);
+                                startActivity(intent);
+                            }
+                        });
                         break;
                     case R.id.rb_message:
                         topBarView.setLeftImageViewIcon(null);

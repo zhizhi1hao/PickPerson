@@ -51,9 +51,9 @@ public class TopBarView extends RelativeLayout {
         viewline=new View(context);
 
         leftImageView.setImageDrawable(leftimage);
-        leftImageView.setScaleType(ImageView.ScaleType.CENTER);
+        leftImageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
         rightImageView.setImageDrawable(rightimage);
-        rightImageView.setScaleType(ImageView.ScaleType.CENTER);
+        rightImageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
 
         tittle.setTextColor(textColor);
         tittle.setText(textTitle);
