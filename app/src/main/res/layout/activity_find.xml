@@ -47,7 +47,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="7"
             android:text="附近的人"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/smallarrow" />
     </LinearLayout>
     <!--精选目的地-->
     <LinearLayout
@@ -68,8 +74,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="7"
-            android:text="附近的人"
+            android:text="精选目的地"
             android:textSize="20sp" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/smallarrow" />
     </LinearLayout>
     <!--扫一扫-->
     <LinearLayout
@@ -105,7 +116,14 @@
                 android:gravity="center"
                 android:text="扫二维码发现更多"
                 android:textSize="14sp" />
+
         </LinearLayout>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/smallarrow"
+            android:layout_gravity="center"/>
 
     </LinearLayout>
 </LinearLayout>
