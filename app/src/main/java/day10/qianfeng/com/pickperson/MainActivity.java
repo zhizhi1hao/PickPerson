@@ -1,39 +1,63 @@
 package day10.qianfeng.com.pickperson;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.util.Log;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+
+import day10.qianfeng.com.pickperson.customview.TopBarView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
     //Text uPS
+    private TopBarView topBarView;
+    private RadioGroup rg;
+    private RadioButton rb_home;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        init();
     }
 
+    public void init(){
+        topBarView=(TopBarView)findViewById(R.id.topbar);
+        rg=(RadioGroup)findViewById(R.id.bottom_menu);
+        rb_home=(RadioButton)findViewById(R.id.rb_home);
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+        rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                switch (checkedId){
+                    case R.id.rb_home:
+                        Log.d("ss","home");
+                        topBarView.setLeftImageViewIcon(getResources().getDrawable(R.drawable.search_icon));
+                        topBarView.setRigImageView(getResources().getDrawable(R.drawable.edit_icon));
+                        topBarView.setTittleText("捡人");
+                        break;
+                    case R.id.rb_message:
+                        topBarView.setLeftImageViewIcon(null);
+                        topBarView.setRigImageView(getResources().getDrawable(R.drawable.chat_add));
+                        topBarView.setTittleText("消息");
+                        break;
+                    case R.id.rb_find:
+                        topBarView.setTittleText("发现");
+                        topBarView.setLeftImageViewIcon(null);
+                        topBarView.setRigImageView(null);
+                        break;
+                    case R.id.rb_me:
+                        topBarView.setLeftImageViewIcon(null);
+                        topBarView.setRigImageView(getResources().getDrawable(R.drawable.setting_icon));
+                        topBarView.setTittleText("我的");
+                        break;
+                }
+            }
+        });
+        rb_home.setChecked(true);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }
