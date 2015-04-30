@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context="day10.qianfeng.com.pickperson.activity.LaunchPickActivity"
+
+    >
+
+
+    <day10.qianfeng.com.pickperson.customview.TopBarView
+        android:id="@+id/topbar_lunchpick"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        custom:leftImage="@drawable/search_icon"
+        custom:rightImage="@drawable/edit_icon"
+        custom:topbar_title="发捡人"
+
+        />
+
+</LinearLayout>

@@ -109,6 +109,7 @@ public class TopBarView extends RelativeLayout {
         this.listener=listener;
     }
 
+
     public void setLeftImageViewIcon(Drawable drawable){
         leftImageView.setImageDrawable(drawable);
     }
