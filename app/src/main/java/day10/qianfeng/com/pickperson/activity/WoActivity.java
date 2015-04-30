@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import day10.qianfeng.com.pickperson.R;
+
 
 public class WoActivity extends ActionBarActivity {
 
