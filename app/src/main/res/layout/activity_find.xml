@@ -12,19 +12,21 @@
         android:layout_height="100dp"
         android:layout_margin="12dp">
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/img_trip"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:src="@drawable/homepage_top" />
+            android:background="@drawable/homepage_top" />
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/img_car"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_weight="1"
-            android:src="@drawable/homepage_top" />
+            android:background="@drawable/homepage_top" />
     </LinearLayout>
 
     <!--附近的人-->
@@ -34,6 +36,7 @@
         android:background="#aaaaaa"
         ></View>
     <LinearLayout
+        android:id="@+id/layout_nearperson"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#ffffff"
@@ -51,6 +54,7 @@
             android:layout_weight="7"
             android:text="附近的人"
             android:textSize="16sp"
+            android:textColor="#333333"
             />
         <ImageView
             android:layout_width="0dp"
@@ -71,6 +75,7 @@
         android:background="#aaaaaa"
         ></View>
     <LinearLayout
+        android:id="@+id/layout_position"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#ffffff"
@@ -87,6 +92,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="7"
             android:text="精选目的地"
+            android:textColor="#333333"
             android:textSize="16sp" />
         <ImageView
             android:layout_width="0dp"
@@ -107,6 +113,7 @@
         android:background="#aaaaaa"
         ></View>
     <LinearLayout
+        android:id="@+id/layout_scanner_two"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#ffffff">
@@ -129,6 +136,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="扫一扫"
+                android:textColor="#333333"
                 android:textSize="16sp" />
 
             <TextView
@@ -138,6 +146,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="扫二维码发现更多"
+                android:textColor="#333333"
                 android:textSize="10sp" />
 
         </LinearLayout>
