@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical">
+<!--附近的人-->
+
+    <!--头像-->
+    <ImageView
+        android:id="@+id/near_person_icon"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="100dp"
+        android:src="@drawable/head_normal_blue"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Vivian"
+                android:id="@+id/near_person_nickname"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/near_person_dis"
+                android:text="2.27km"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+<!--年龄-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+        <RelativeLayout
+            android:layout_width="32dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_alignTop="@+id/username"
+            android:layout_toRightOf="@+id/username"
+            >
+            <ImageView
+                android:id="@+id/near_person_age_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                />
+            <TextView
+                android:id="@+id/near_person_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                />
+        </RelativeLayout>
+        </LinearLayout>
+<!--具体内容-->
+        <TextView
+            android:id="@+id/near_person_detail"
+            android:gravity="center_vertical"
+            android:text="aaa"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    </LinearLayout>

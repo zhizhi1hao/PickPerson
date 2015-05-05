@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="day10.qianfeng.com.pickperson.activity.NearPersonActivity">
+
+
+    <day10.qianfeng.com.pickperson.customview.TopBarView
+        android:id="@+id/topbar_lunchpick"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        custom:leftImage="@drawable/back"
+        custom:rightImage="@drawable/near_sex_filter"
+        custom:topbar_title="附近的人"
+        custom:titleTextColor="#555555"
+        custom:titleTextSiza="10sp"
+        />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/list_nearperson"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+</LinearLayout>

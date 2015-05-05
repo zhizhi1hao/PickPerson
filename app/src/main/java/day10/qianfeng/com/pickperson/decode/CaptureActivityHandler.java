@@ -1,10 +1,11 @@
-package day10.qianfeng.com.pickperson.dimension2code;
+package day10.qianfeng.com.pickperson.decode;
 
 import android.os.Handler;
 import android.os.Message;
 
 import day10.qianfeng.com.pickperson.R;
 import day10.qianfeng.com.pickperson.activity.CaptureActivity;
+import day10.qianfeng.com.pickperson.camera.CameraManager;
 
 
 public final class CaptureActivityHandler extends Handler {

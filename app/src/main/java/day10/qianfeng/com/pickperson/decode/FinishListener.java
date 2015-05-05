@@ -1,4 +1,4 @@
-package day10.qianfeng.com.pickperson.dimension2code;
+package day10.qianfeng.com.pickperson.decode;
 
 import android.app.Activity;
 import android.content.DialogInterface;

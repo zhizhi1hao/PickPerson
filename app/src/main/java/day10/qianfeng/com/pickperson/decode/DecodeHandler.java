@@ -1,21 +1,19 @@
-package day10.qianfeng.com.pickperson.dimension2code;
+package day10.qianfeng.com.pickperson.decode;
 
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
+
 
 import day10.qianfeng.com.pickperson.R;
 import day10.qianfeng.com.pickperson.activity.CaptureActivity;
 import day10.qianfeng.com.pickperson.activity.ZbarManager;
 
 final class DecodeHandler extends Handler {
-
 	CaptureActivity activity = null;
-
 	DecodeHandler(CaptureActivity activity) {
 		this.activity = activity;
 	}
-
 	@Override
 	public void handleMessage(Message message) {
 		switch (message.what) {
@@ -27,7 +25,6 @@ final class DecodeHandler extends Handler {
 			break;
 		}
 	}
-
 	private void decode(byte[] data, int width, int height) {
 		byte[] rotatedData = new byte[data.length];
 		for (int y = 0; y < height; y++) {

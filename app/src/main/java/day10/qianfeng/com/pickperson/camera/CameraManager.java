@@ -1,4 +1,4 @@
-package day10.qianfeng.com.pickperson.dimension2code;
+package day10.qianfeng.com.pickperson.camera;
 
 import java.io.IOException;
 
@@ -63,7 +63,7 @@ public final class CameraManager {
 				configManager.initFromCameraParameters(camera);
 			}
 			configManager.setDesiredCameraParameters(camera);
-			FlashlightManager.switchFlashlight(initialized);
+			FlashlightManager.enableFlashlight();
 		}
 	}
 

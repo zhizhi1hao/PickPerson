@@ -1,4 +1,4 @@
-package day10.qianfeng.com.pickperson.dimension2code;
+package day10.qianfeng.com.pickperson.camera;
 
 import android.hardware.Camera;
 import android.os.Handler;

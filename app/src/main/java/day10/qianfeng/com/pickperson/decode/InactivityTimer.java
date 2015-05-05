@@ -1,4 +1,4 @@
-package day10.qianfeng.com.pickperson.dimension2code;
+package day10.qianfeng.com.pickperson.decode;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
